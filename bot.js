@@ -22,7 +22,7 @@ client.on("guildMemberAdd", member => {
     if (!channel) return 
       number = 10
   
-  var images = ["https://i.ibb.co/HVjBXZ7/welcome-to-bcs.png"];
+  var images = ["https://i.ibb.co/bKYSYVP/Untitled-1.png"];
   var image = Math.floor(Math.random() * images.length);
   
 
