@@ -42,7 +42,7 @@ client.on("guildMemberAdd", member => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
     var bbchoose = bbmsg[bbrandom]
     let embed = new Discord.MessageEmbed()
-          .setTitle(member.user.username+"```has joined Brawlball Community server```")
+          .setTitle(member.user.username+"```has joined BCS```")
           .setColor(bbclrchos)
           .setThumbnail(member.user.avatarURL())
           .setDescription(bbchoose)
