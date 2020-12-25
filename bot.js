@@ -28,7 +28,7 @@ client.on("guildMemberAdd", member => {
 
 
       var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us!  ${member}`,
-      `Hey  ${member} Welcome to Brawlball Community Server`,
+      `We are delighted to have you among us ${member}`,
       `Welcome to the team! ${member} :wink: `,
       `Well well well look who is here Guys ${member}`,
       `Welcome aboard new buddy!${member}`,
@@ -44,7 +44,7 @@ client.on("guildMemberAdd", member => {
     let embed = new Discord.MessageEmbed()
           .setTitle(member.user.username+"  -  "+"has joined Brawlball Community server")
           .setColor(bbclrchos)
-          .setThumbnail(member.user.avatarURL)
+          .setThumbnail(member.user.displayAvatarURL)
           .setDescription(bbchoose)
           .setImage(String([images[image]]))
           
