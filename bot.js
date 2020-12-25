@@ -12,7 +12,7 @@ client.on('ready' , () => {
 
 client.on("guildMemberAdd", member => {
   const channel2 = member.guild.channels.cache.get("691026608777330808")
-  channel2.send(`${member} has join to Our Brawlball Community server`)
+  channel2.send(`${member} ** Welcome to Brawlball Community server **`)
 })
 
     
@@ -22,7 +22,7 @@ client.on("guildMemberAdd", member => {
     if (!channel) return 
       number = 10
   
-  var images = ["https://raw.githubusercontent.com/astrulmr/bots/master/1.png", "https://raw.githubusercontent.com/astrulmr/bots/master/2.png", "https://raw.githubusercontent.com/astrulmr/bots/master/3.png", "https://raw.githubusercontent.com/astrulmr/bots/master/4.png", "https://raw.githubusercontent.com/astrulmr/bots/master/5.png", "https://raw.githubusercontent.com/astrulmr/bots/master/6.png", "https://raw.githubusercontent.com/astrulmr/bots/master/7.png", "https://raw.githubusercontent.com/astrulmr/bots/master/8.png", "https://raw.githubusercontent.com/astrulmr/bots/master/9.png"];
+  var images = ["https://i.ibb.co/HVjBXZ7/welcome-to-bcs.png"];
   var image = Math.floor(Math.random() * images.length);
   
 
@@ -42,7 +42,7 @@ client.on("guildMemberAdd", member => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
     var bbchoose = bbmsg[bbrandom]
     let embed = new Discord.MessageEmbed()
-          .setTitle(member.user.username+" "+"has joined Brawlball Community server")
+          .setTitle(member.user.username+"  -  "+"has joined Brawlball Community server")
           .setColor(bbclrchos)
           .setThumbnail(member.user.avatarURL)
           .setDescription(bbchoose)
