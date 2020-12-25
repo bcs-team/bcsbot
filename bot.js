@@ -11,14 +11,14 @@ client.on('ready' , () => {
 })
 
 client.on("guildMemberAdd", member => {
-  const channel2 = member.guild.channels.cache.get("535540529379672074")
+  const channel2 = member.guild.channels.cache.get("691026608777330808")
   channel2.send(`${member} has join to Our Brawlball Community server`)
 })
 
     
 
   client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.get("613400026978320395")
+    const channel = member.guild.channels.cache.get("691026608777330808")
     if (!channel) return 
       number = 10
   
