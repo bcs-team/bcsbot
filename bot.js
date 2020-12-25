@@ -44,7 +44,7 @@ client.on("guildMemberAdd", member => {
     let embed = new Discord.MessageEmbed()
           .setTitle(member.user.username+"  -  "+"has joined Brawlball Community server")
           .setColor(bbclrchos)
-          .setThumbnail(member.avatarURL)
+          .setThumbnail(user.displayAvatarURL)
           .setDescription(bbchoose)
           .setImage(String([images[image]]))
           
