@@ -12,7 +12,7 @@ client.on('ready' , () => {
 
 client.on("guildMemberAdd", member => {
   const channel2 = member.guild.channels.cache.get("535540529379672074")
-  channel2.send(`${member} has join to Our Style server`)
+  channel2.send(`${member} has join to Our Brawlball Community server`)
 })
 
     
@@ -27,12 +27,12 @@ client.on("guildMemberAdd", member => {
   
 
 
-      var bbmsg = [ `OMG !!! Is that you  ${member} Welcome Dude `,
-      `Hey  ${member} Welcome to Our Style `,
-      `Great we're glad you came  ${member} :wink: `,
+      var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us!  ${member}`,
+      `Hey  ${member} Welcome to Brawlball Community Server`,
+      `Welcome to the team! ${member} :wink: `,
       `Well well well look who is here Guys ${member}`,
-      `I have to tell you something come here ~WELCOME~  ${member} :neutral_face: `,
-      `Is that you, wait no. You are ${member} Anyway Welcome `]
+      `Welcome aboard new buddy!${member}`,
+      `On behalf of all of us, Welcome onboard! ${member}`]
 
     var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
     
@@ -42,7 +42,7 @@ client.on("guildMemberAdd", member => {
       var bbrandom = Math.floor(Math.random() * bbmsg.length)
     var bbchoose = bbmsg[bbrandom]
     let embed = new Discord.MessageEmbed()
-          .setTitle(member.user.username+" "+"`Has joined to Our Style server`")
+          .setTitle(member.user.username+" "+"has joined Brawlball Community server")
           .setColor(bbclrchos)
           .setThumbnail(member.user.avatarURL)
           .setDescription(bbchoose)
