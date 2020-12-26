@@ -15,16 +15,30 @@ client.on('message', message => {
           .setTitle('Defender Guide for Brawlball')
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
-          .setDescription('get gud')
+          .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
+          .setImage('https://ibb.co/Sy5fWrh')
+          .setFooter('Brawlball Community Server', client.user.avatarURL())
+    message.channel.send(embed)
+  }
+})
+client.on('message', message => {
+  if (message.content === '!guides') {
+      const embed = new Discord.MessageEmbed()
+          .setTitle('Defender Guide for Brawlball')
+          .setColor("#000000")
+          .setThumbnail(client.user.avatarURL)
+          .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
+          .setImage('https://ibb.co/Sy5fWrh')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
 })
 
 
+
 client.on('message', message => {
-  if (message.content ==='help') {
-    message.channel.send("no go away")
+  if (message.content ==='!test') {
+    message.channel.send("BCS Working Fine")
   }
   })
 client.on('message', message => {
