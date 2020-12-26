@@ -11,7 +11,7 @@ client.on('ready' , () => {
 })
 client.on('message', message => {
   if (message.content === '!dguide') {
-      const embed = new RichEmbed()
+      const embed = Discord.MessageEmbed()
 
           .setTitle('Our Style Brawlball Clan ')
           .setColor(0xf60af8)
@@ -24,7 +24,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content === '!help') {
-      const embed = new RichEmbed()
+      const embed = Discord.MessageEmbed()
 
           .setTitle('Brawlball Community Bot Commands')
           .setColor(0xf60af8)
