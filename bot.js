@@ -11,28 +11,28 @@ client.on('ready' , () => {
 })
 
 client.on("guildMemberAdd", member => {
-  const channel2 = member.guild.channels.cache.get("789692987914584107")
+  const channel2 = member.guild.channels.cache.get("691026608777330808")
   channel2.send(`${member} ** Welcome to Brawlball Community server **`)
 })
 
     
 
   client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.get("789706902577348618")
+    const channel = member.guild.channels.cache.get("691026608777330808")
     if (!channel) return 
       number = 10
   
-  var images = ["https://i.ibb.co/FBPC54c/Untitled-1.png"];
+  var images = ["https://i.ibb.co/XjVV1ty/bcs-welcome-image.png"];
   var image = Math.floor(Math.random() * images.length);
   
 
 
-      var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us! ${member}`,
-      `We are delighted to have you among us ${member}`,
+      var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us!/n${member}`,
+      `We are delighted to have you among us \n${member}`,
       `Welcome to the team! ${member} :wink: `,
-      `Well well well look who is here Guys ${member}`,
+      `Well well well look who is here Guys \n${member}`,
       `Welcome aboard new buddy! ${member}`,
-      `On behalf of all of us, Welcome onboard! ${member}`]
+      `On behalf of all of us, Welcome onboard!/n${member}`]
 
     var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
     
