@@ -34,9 +34,9 @@ client.on('message', message => {
           .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL())
           .setDescription('Here is the codes you can use in this bot')
-          .addField('!rguide', 'Showing Runner Guide for brawlball', true)
-          .addField('!sguide', 'Showing supporter Guide for brawlball', true)
-          .addField('!dguide', 'Showing Defender Guide for brawlball', true)
+          .addField('"!rguide"', '`Showing Runner Guide for brawlball`', true)
+          .addField('"!sguide"', '`Showing supporter Guide for brawlball`', true)
+          .addField('"!dguide"', '`Showing Defender Guide for brawlball`', true)
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed);
   }
