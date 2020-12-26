@@ -25,6 +25,11 @@ client.on('message', message => {
 
 const prefix  = "!";
 client.on('message', message => {
+  if (message.content ==='help') {
+    message.channel.send("yes");
+  }
+  })
+client.on('message', message => {
   if (message.content === prefix +  'help') {
     
     message.channel.send("no go away")
