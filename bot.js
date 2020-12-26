@@ -46,10 +46,10 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content ==='!ez') { 
     let embed = new Discord.MessageEmbed()
-    .setTitle("ez"+" - "+"**has joined BCS**")
+    .setTitle("**has joined BCS**")
     .setColor("#FF0000")
     .setDescription("ez")
-  channel.send(embed);        
+  message.channel.send(embed);        
   
   }
 })
