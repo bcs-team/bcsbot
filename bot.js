@@ -70,12 +70,12 @@ client.on("guildMemberAdd", member => {
   
 
 
-      var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us! /n ${member}`,
+      var bbmsg = [ `A very warm welcome to you! It is lovely to have you among us! \n ${member}`,
       `We are delighted to have you among us \n ${member}`,
       `Welcome to the team! ${member} :wink: `,
       `Well well well look who is here Guys \n ${member}`,
       `Welcome aboard new buddy! ${member}`,
-      `On behalf of all of us, Welcome onboard! /n ${member}`]
+      `On behalf of all of us, Welcome onboard! \n ${member}`]
 
     var bbcolor = [ "#FF0000","#0000FF","#000000","#FFFF00","#FFFFFF","#800080","#008000","#808080","#ADD8E6"]
     
