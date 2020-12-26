@@ -26,6 +26,7 @@ client.on('message', message => {
 const prefix  = "!";
 client.on('message', message => {
   if (message.content ==='help') {
+    client.channels.cache.get('691026608777330808').send('yourmessage');
     message.channel.send("yes");
   }
   })
