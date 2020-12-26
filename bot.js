@@ -24,6 +24,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content === '!help') {
+    message.channel.send("no go away")
       const embed = Discord.MessageEmbed()
 
           .setTitle('Brawlball Community Bot Commands')
