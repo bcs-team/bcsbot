@@ -23,15 +23,15 @@ client.on('message', message => {
   }
 })
 
-const prefix  = "!";
+
 client.on('message', message => {
   if (message.content ==='help') {
-    message.channel.send("yes");
+    
   }
   })
 client.on('message', message => {
-  if (message.content === prefix +  'help') {
-    
+  if (message.content ==='!help') {
+    message.channel.send("yes");
     message.channel.send("no go away")
       const embed = Discord.MessageEmbed()
 
