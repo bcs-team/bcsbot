@@ -33,17 +33,17 @@ client.on('message', message => {
   if (message.content ==='!help') {
     message.channel.send("yes");
     message.channel.send("no go away")
-     /* const embed = Discord.MessageEmbed()
+     let embed = Discord.MessageEmbed()
 
           .setTitle('Brawlball Community Bot Commands')
           .setColor(0xf60af8)
-          .setThumbnail(client.user.avatarURL)
+          .setThumbnail(client.user.avatarURL())
           .setDescription('Here is the codes you can use in this bot')
           .addField('!rguide', 'Showing Runner Guide for brawlball', false)
           .addField('!sguide', 'Showing supporter Guide for brawlball', false)
           .addField('!dguide', 'Showing Defender Guide for brawlball', false)
-          .setFooter('BCS', client.user.avatarURL )
-    message.channel.send(embed);*/
+          .setFooter('BCS', client.user.avatarURL())
+    message.channel.send(embed);
   }
 })
 
