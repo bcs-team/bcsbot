@@ -30,10 +30,10 @@ client.on('message', message => {
   }
   })
 client.on('message', message => {
-  if (message.content ==='help') {
+  if (message.content ==='!help') {
     message.channel.send("yes");
     message.channel.send("no go away")
-      const embed = Discord.MessageEmbed()
+     /* const embed = Discord.MessageEmbed()
 
           .setTitle('Brawlball Community Bot Commands')
           .setColor(0xf60af8)
@@ -43,7 +43,7 @@ client.on('message', message => {
           .addField('!sguide', 'Showing supporter Guide for brawlball', false)
           .addField('!dguide', 'Showing Defender Guide for brawlball', false)
           .setFooter('BCS', client.user.avatarURL )
-    message.channel.send(embed)
+    message.channel.send(embed);*/
   }
 })
 
