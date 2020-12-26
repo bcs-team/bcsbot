@@ -41,10 +41,10 @@ client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
           .setTitle('Supporter Guide for Brawlball')
-          .setColor("#000000")
+          .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
-          .setImage('https://i.ibb.co/cwhMH0g/sup-guide.png')
+          .setImage('https://i.ibb.co/1dshDkY/SUP2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
