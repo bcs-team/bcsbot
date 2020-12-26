@@ -24,7 +24,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content === '!help') {
-    client.message.get('ping').execute(message, args);
+    client.message.content.get('ping').execute(message, args);
     channel.send("no go away")
       const embed = Discord.MessageEmbed()
 
