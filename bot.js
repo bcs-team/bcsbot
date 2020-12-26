@@ -48,7 +48,6 @@ client.on('message', message => {
     let embed = new Discord.MessageEmbed()
     .setTitle("ez"+" - "+"**has joined BCS**")
     .setColor("#FF0000")
-    .setThumbnail(client.user.avatarURL())
     .setDescription("ez")
   channel.send(embed);        
   
