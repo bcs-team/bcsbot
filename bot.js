@@ -14,7 +14,7 @@ client.on('message', message => {
       const embed = new Discord.MessageEmbed()
 
           .setTitle('Our Style Brawlball Clan ')
-          .setColor(0xf60af8)
+          .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('Here we are friends who where gathered by the love of brawlball. There are no leaders, just players')
           .addField('Teams', 'Runner - Supporter - Defender \n Substitute', false)
@@ -33,7 +33,7 @@ client.on('message', message => {
   if (message.content ==='!help') { 
      let embed = new Discord.MessageEmbed()
           .setTitle('Brawlball Community Bot Commands')
-          .setColor(0xf60af8)
+          .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL())
           .setDescription('Here is the codes you can use in this bot')
           .addField('!rguide', 'Showing Runner Guide for brawlball', false)
@@ -41,6 +41,17 @@ client.on('message', message => {
           .addField('!dguide', 'Showing Defender Guide for brawlball', false)
           .setFooter('BCS', client.user.avatarURL())
     channel.send(embed);
+  }
+})
+client.on('message', message => {
+  if (message.content ==='!ez') { 
+    let embed = new Discord.MessageEmbed()
+    .setTitle("ez"+" - "+"**has joined BCS**")
+    .setColor("#FF0000")
+    .setThumbnail(client.user.avatarURL())
+    .setDescription("ez")
+  channel.send(embed);        
+  
   }
 })
 
