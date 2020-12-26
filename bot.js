@@ -13,7 +13,7 @@ client.on('message', message => {
   if (message.content === '!dguide') {
       const embed = new Discord.MessageEmbed()
           .setTitle('Defender Guide for Brawlball')
-          .setColor("#FF0000")
+          .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('get gud')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
@@ -34,9 +34,9 @@ client.on('message', message => {
           .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL())
           .setDescription('Here is the codes you can use in this bot')
-          .addField('`!rguide`', '**Showing Runner Guide for brawlball**', true)
-          .addField('`!sguide`', '**Showing supporter Guide for brawlball**', true)
-          .addField('`!dguide`', '**Showing Defender Guide for brawlball**', true)
+          .addField('**!rguide**', '``Showing Runner Guide for brawlball``', false)
+          .addField('**!sguide**', '``Showing supporter Guide for brawlball``', false)
+          .addField('**!dguide**', '``Showing Defender Guide for brawlball``', false)
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed);
   }
