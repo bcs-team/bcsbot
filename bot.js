@@ -22,10 +22,12 @@ client.on('message', message => {
     message.channel.send(embed)
   }
 })
+
+const { prefix } = "!";
 client.on('message', message => {
-  if (message.content === '!help') {
-    client.message.content.get('ping').execute(message, args);
-    channel.send("no go away")
+  if (message.content === prefix +  'help') {
+    
+    message.channel.send("no go away")
       const embed = Discord.MessageEmbed()
 
           .setTitle('Brawlball Community Bot Commands')
