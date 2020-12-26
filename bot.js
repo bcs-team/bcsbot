@@ -16,7 +16,7 @@ client.on('message', message => {
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
-          .setImage('https://ibb.co/Sy5fWrh')
+          .setImage('https://i.ibb.co/pwbhGyt/abstract-gradient-pink-purple-stripes-on-purple-background.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
@@ -56,7 +56,7 @@ client.on('message', message => {
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
-          .setImage('https://ibb.co/Sy5fWrh')
+          .setImage('https://i.ibb.co/pwbhGyt/abstract-gradient-pink-purple-stripes-on-purple-background.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
