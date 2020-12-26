@@ -21,6 +21,34 @@ client.on('message', message => {
     message.channel.send(embed)
   }
 })
+
+
+
+
+client.on('message', message => {
+  if (message.content === '!guides') {
+      const embed = new Discord.MessageEmbed()
+          .setTitle('Runner Guide for Brawlball')
+          .setColor("#000000")
+          .setThumbnail(client.user.avatarURL)
+          .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
+          .setImage('https://i.ibb.co/hdtdT9d/runner-guide.png')
+          .setFooter('Brawlball Community Server', client.user.avatarURL())
+    message.channel.send(embed)
+  }
+})
+client.on('message', message => {
+  if (message.content === '!guides') {
+      const embed = new Discord.MessageEmbed()
+          .setTitle('Supporter Guide for Brawlball')
+          .setColor("#000000")
+          .setThumbnail(client.user.avatarURL)
+          .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
+          .setImage('https://i.ibb.co/cwhMH0g/sup-guide.png')
+          .setFooter('Brawlball Community Server', client.user.avatarURL())
+    message.channel.send(embed)
+  }
+})
 client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
@@ -33,6 +61,9 @@ client.on('message', message => {
     message.channel.send(embed)
   }
 })
+
+
+
 
 
 
