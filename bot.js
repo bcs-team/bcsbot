@@ -12,7 +12,6 @@ client.on('ready' , () => {
 client.on('message', message => {
   if (message.content === '!dguide') {
       const embed = new Discord.MessageEmbed()
-
           .setTitle('Defender Guide for Brawlball')
           .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL)
@@ -45,7 +44,7 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content ==='!ez') { 
     let embed = new Discord.MessageEmbed()
-    .setTitle("**has joined BCS**")
+    .setTitle("**Ez**")
     .setColor("#FF0000")
     .setDescription("ez")
   message.channel.send(embed);        
@@ -54,14 +53,14 @@ client.on('message', message => {
 })
 
 client.on("guildMemberAdd", member => {
-  const channel2 = member.guild.channels.cache.get("691026608777330808")
+  const channel2 = member.guild.channels.cache.get("789692987914584107")
   channel2.send(`${member} ** Welcome to Brawlball Community server **`)
 })
 
     
 
   client.on('guildMemberAdd', member => {
-    const channel = member.guild.channels.cache.get("691026608777330808")
+    const channel = member.guild.channels.cache.get("789706902577348618")
     if (!channel) return 
       number = 10
   
