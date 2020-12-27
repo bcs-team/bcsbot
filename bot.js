@@ -53,7 +53,7 @@ client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
           .setTitle('**Defender Guide for Brawlball**')
-          .setColor("#FFFFFF")
+          .setColor("#ffffff")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
           .setImage('https://i.ibb.co/TKyMTpR/def2.png')
@@ -82,6 +82,7 @@ client.on('message', message => {
           .addField('**!rguide**', '``Showing Runner Guide for brawlball``', false)
           .addField('**!sguide**', '``Showing supporter Guide for brawlball``', false)
           .addField('**!dguide**', '``Showing Defender Guide for brawlball``', false)
+          .addField('**!guides**', '``To view all brawlball guides``', false)
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed);
   }
