@@ -15,7 +15,7 @@ client.on('message', message => {
           .setTitle('**Defender Guide for Brawlball**')
           .setColor("#91A6A6")
           .setThumbnail(client.user.avatarURL)
-          .setDescription("Click Here To View The Guide: [link](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing)")
+          .setDescription("Click [Here](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing) To View The Guide")
           .setImage('https://i.ibb.co/TKyMTpR/def2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
