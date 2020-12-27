@@ -28,11 +28,11 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
-          .setTitle('Runner Guide for Brawlball')
+          .setTitle('**Runner Guide for Brawlball**')
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
-          .setImage('https://i.ibb.co/hdtdT9d/runner-guide.png')
+          .setImage('https://i.ibb.co/Jcr8dqf/runner2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
@@ -40,10 +40,10 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
-          .setTitle('Supporter Guide for Brawlball')
+          .setTitle('**Supporter Guide for Brawlball**')
           .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL)
-          .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
+          .setDescription('https://docs.google.com/document/d/1Ho9EDdAyNlFyLD6pmAZFtjiJQjo47DsZD_Ash2XXL2U/edit?usp=sharing')
           .setImage('https://i.ibb.co/1dshDkY/SUP2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
@@ -52,11 +52,11 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '!guides') {
       const embed = new Discord.MessageEmbed()
-          .setTitle('Defender Guide for Brawlball')
-          .setColor("#000000")
+          .setTitle('**Defender Guide for Brawlball**')
+          .setColor("#FFFFFF")
           .setThumbnail(client.user.avatarURL)
           .setDescription('https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing')
-          .setImage('https://i.ibb.co/pwbhGyt/abstract-gradient-pink-purple-stripes-on-purple-background.png')
+          .setImage('https://i.ibb.co/TKyMTpR/def2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
