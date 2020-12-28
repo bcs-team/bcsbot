@@ -134,7 +134,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('ready', () => {
-  client.guilds.cache.get('678060933150670871').channels.cache.get('691026608777330808').messages.fetch('793128717487570944');
+  client.guilds.cache.get('my server id').channels.cache.get('channel id').messages.fetch('msg id');
 });
 client.on('messageReactionAdd', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
@@ -142,19 +142,16 @@ client.on('messageReactionAdd', (reaction, user) => {
   if (emoji.name == '✅') {
           // We don't have the member, but only the user...
           // Thanks to the previous part, we know how to fetch it
-          message.guild.messages.fetch(user.id).then(member => {
-                  member.roles.add('793130309583241236');
+          message.guild.members.fetch(user.id).then(member => {
+                  member.roles.add('role id');
           });
   }
 
   else if (emoji.name == '❎') {
-          message.guild.messages.fetch(user.id).then(member => {
-                  member.roles.remove('793130309583241236');
+          message.guild.members.fetch(user.id).then(member => {
+                  member.roles.remove('role id');
           });
   }
-
-  // Remove the user's reaction
-  //reaction.remove(user);
 });
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////WELCOME MSGS CODE//////////////////////////////////////////////////////////////////////////////
