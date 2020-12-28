@@ -125,6 +125,7 @@ client.on('message', message => {
     .setTitle("**React if you play brawlball and want to get pinged**")
     .setColor("#0000FF")
     .setDescription("React with this")
+    .addField("**Brawlballians**","🏈",true )
     .addField("**EU**",":flag_eu:",true )
     .addField("**US-E**",":flag_us: ",true )
     .addField("**Remove Brawlballians Role**","🏈",true )
@@ -165,7 +166,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('ready', () => {
-  client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793193352128364635');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793196370001264640');
 })
 
 //-------------------------------------eu brawlball reaction-----------------------------------------
@@ -202,9 +203,16 @@ client.on('messageReactionRemove', (reaction, user) => {
                 member.roles.remove('793193942748233769');
         })}}});
     
+//----------------------------------------brawlballians-------------------------------------------------
 
-
-
+        client.on('messageReactionAdd', (reaction, user) => {
+          let message = reaction.message, emoji = reaction.emoji;
+          if(message.channel.id == '793193064931655690'){
+          if (emoji.name == '🏈') {
+                  message.guild.members.fetch(user.id).then(member => {
+                          member.roles.add('789701228279627814');
+                          
+                  })}}});
         client.on('messageReactionRemove', (reaction, user) => {
           let message = reaction.message, emoji = reaction.emoji;
           if(message.channel.id == '793193064931655690'){
