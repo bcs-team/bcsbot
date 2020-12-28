@@ -9,6 +9,13 @@ client.on('ready' , () => {
 
   client.user.setActivity("Brawlball")
 })
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////BRAWLBALL GUIDES CODE//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 client.on('message', message => {
   if (message.content === '!dguide') {
      const embed = new Discord.MessageEmbed()
@@ -27,7 +34,7 @@ client.on('message', message => {
           .setTitle('**Runner Guide for Brawlball**')
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
-          .setDescription("Click [Here](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing) To View The Guide")
+          .setDescription("Click [Here](https://docs.google.com/document/d/1RJ-dsOWO45vVJFZPNPpibL2cwl3oGPnXCmIY-5Sa7O0/edit?usp=sharing) To View The Guide")
           .setImage('https://i.ibb.co/R3fVWh6/run2.png')
           .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
@@ -55,9 +62,8 @@ client.on('message', message => {
           .setTitle('**Runner Guide for Brawlball**')
           .setColor("#000000")
           .setThumbnail(client.user.avatarURL)
-          .setDescription("Click [Here](https://docs.google.com/document/d/1Ho9EDdAyNlFyLD6pmAZFtjiJQjo47DsZD_Ash2XXL2U/edit?usp=sharing) To View The Guide")
+          .setDescription("Click [Here](https://docs.google.com/document/d/1RJ-dsOWO45vVJFZPNPpibL2cwl3oGPnXCmIY-5Sa7O0/edit?usp=sharing) To View The Guide")
           .setImage('https://i.ibb.co/R3fVWh6/run2.png')
-          .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
 })
@@ -69,7 +75,6 @@ client.on('message', message => {
           .setThumbnail(client.user.avatarURL)
           .setDescription("Click [Here](https://docs.google.com/document/d/1Ho9EDdAyNlFyLD6pmAZFtjiJQjo47DsZD_Ash2XXL2U/edit?usp=sharing) To View The Guide")
           .setImage('https://i.ibb.co/1dshDkY/SUP2.png')
-          .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
 })
@@ -81,11 +86,13 @@ client.on('message', message => {
           .setThumbnail(client.user.avatarURL)
           .setDescription("Click [Here](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing) To View The Guide")
           .setImage('https://i.ibb.co/TKyMTpR/def2.png')
-          .setFooter('Brawlball Community Server', client.user.avatarURL())
     message.channel.send(embed)
   }
 })
 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////TEST CODE//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
 
@@ -121,6 +128,11 @@ client.on('message', message => {
   
   }
 })
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////WELCOME MSGS CODE//////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("guildMemberAdd", member => {
   const channel2 = member.guild.channels.cache.get("789692987914584107")
