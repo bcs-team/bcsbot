@@ -138,33 +138,28 @@ client.on('ready', () => {
 });
 client.on('messageReactionAdd', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
-
   if (emoji.name == '✅') {
-          // We don't have the member, but only the user...
-          // Thanks to the previous part, we know how to fetch it
           message.guild.members.fetch(user.id).then(member => {
                   member.roles.add('793130309583241236');
-          });
-  }
+          })}});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (emoji.name == '✅') {
+    message.guild.members.fetch(user.id).then(member => {
+            member.roles.remove('793130309583241236');
+    })}});
 
-  else if (emoji.name == '❎') {
-          message.guild.members.fetch(user.id).then(member => {
-                  member.roles.remove('793130309583241236');
-          });
-  }
 
-  // Remove the user's reaction
-  //reaction.remove(user);
-});
+    
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////WELCOME MSGS CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("guildMemberAdd", member => {
-  const channel2 = member.guild.channels.cache.get("789692987914584107")
+  const channel2 = member.guild.channels.cache.get("691026608777330808")
   channel2.send(`${member} ** Welcome to Brawlball Community server **`)
-    var role = member.guild.roles.cache.find(role => role.name === 'Brawlballians');
-       member.roles.add(role)
+    //var role = member.guild.roles.cache.find(role => role.name === 'Brawlballians');
+     //  member.roles.add(role)
 })
 
     
