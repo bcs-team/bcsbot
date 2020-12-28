@@ -122,9 +122,11 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content ==='!ez') { 
     let embed = new Discord.MessageEmbed()
-    .setTitle("**Ez**")
+    .setTitle("**React if you play brawlball and want to get ping**")
     .setColor("#FF0000")
-    .setDescription("ez")
+    .setDescription("React with this")
+    .addField("IF You Europe",":flag_eu:",true )
+    .addField("IF You US",":flag_us: ",true )
   message.channel.send(embed);        
   
   }
@@ -142,14 +144,14 @@ client.on('ready', () => {
 client.on('messageReactionAdd', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
   if(message.channel.id == '691026608777330808'){
-  if (emoji.name == '🤾‍♂️') {
+  if (emoji.name == '🇪🇺') {
           message.guild.members.fetch(user.id).then(member => {
                   member.roles.add('793130309583241236');
           })}}});
 client.on('messageReactionRemove', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
   if(message.channel.id == '691026608777330808'){
-  if (emoji.name == '🤾‍♂️') {
+  if (emoji.name == '🇪🇺') {
     message.guild.members.fetch(user.id).then(member => {
             member.roles.remove('793130309583241236');
     })}}});
