@@ -127,6 +127,7 @@ client.on('message', message => {
     .setDescription("React with this")
     .addField("**EU**",":flag_eu:",true )
     .addField("**US-E**",":flag_us: ",true )
+    .addField("**Remove Brawlballian Role**","🏈",true )
   message.channel.send(embed);
   
   }
@@ -164,7 +165,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('ready', () => {
-  client.guilds.cache.get('678060933150670871').channels.cache.get('691026608777330808').messages.fetch('793128717487570944');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793193352128364635');
 })
 
 //-------------------------------------eu brawlball reaction-----------------------------------------
@@ -175,6 +176,7 @@ client.on('messageReactionAdd', (reaction, user) => {
   if (emoji.name == '🇪🇺') {
           message.guild.members.fetch(user.id).then(member => {
                   member.roles.add('793193784404869200');
+                  member.roles.add('789701228279627814');
           })}}});
 client.on('messageReactionRemove', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
@@ -190,6 +192,7 @@ client.on('messageReactionRemove', (reaction, user) => {
       if (emoji.name == '🇺🇸') {
               message.guild.members.fetch(user.id).then(member => {
                       member.roles.add('793193942748233769');
+                      member.roles.add('789701228279627814');
               })}}});
     client.on('messageReactionRemove', (reaction, user) => {
       let message = reaction.message, emoji = reaction.emoji;
@@ -199,6 +202,16 @@ client.on('messageReactionRemove', (reaction, user) => {
                 member.roles.remove('793193942748233769');
         })}}});
     
+
+
+
+        client.on('messageReactionRemove', (reaction, user) => {
+          let message = reaction.message, emoji = reaction.emoji;
+          if(message.channel.id == '793193064931655690'){
+          if (emoji.name == '🏈') {
+            message.guild.members.fetch(user.id).then(member => {
+                    member.roles.remove('789701228279627814');
+            })}}});
 
     
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
