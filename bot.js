@@ -122,15 +122,27 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content ==='!ez') { 
     let embed = new Discord.MessageEmbed()
-    .setTitle("**React if you play brawlball and want to get ping**")
-    .setColor("#FF0000")
+    .setTitle("**React if you play brawlball and want to get pinged**")
+    .setColor("#0000FF")
     .setDescription("React with this")
-    .addField("IF You Europe",":flag_eu:",true )
-    .addField("IF You US",":flag_us: ",true )
+    .addField("**EU**",":flag_eu:",true )
+    .addField("**US-E**",":flag_us: ",true )
   message.channel.send(embed);        
   
   }
 })
+client.on('message', message => {
+  if (message.content ==='!gg') { 
+let targetChannel = msg.guild.channels.get("793147387022802994")
+targetChannel.messages.fetch().then((messages) => {
+
+  for(const message of messages){
+message[1].edit("yes")
+
+  }
+
+})
+ } })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
