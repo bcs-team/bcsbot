@@ -133,7 +133,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content ==='!gg') { 
-let targetChannel = msg.guild.channels.get("793147387022802994")
+let targetChannel = message.guild.channels.get("793147387022802994")
 targetChannel.messages.fetch().then((messages) => {
 
   for(const message of messages){
