@@ -133,7 +133,7 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content ==='!editit') { 
-let targetChannel = message.guild.channels.get("793147387022802994")
+let targetChannel = client.channels.get("793147387022802994")
 targetChannel.messages.fetch("793186417470603314")
 .then(message => message.edit("hi"));
  } })
