@@ -1,4 +1,4 @@
-guildMember.addRole(guildMember.guild.roles.find(role => role.name === "ew"));
+
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client();
