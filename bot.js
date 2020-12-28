@@ -110,7 +110,7 @@ client.on('message', message => {
           .setTitle('Commands')
           .setColor("#FF0000")
           .setThumbnail(client.user.avatarURL())
-          .setDescription('Here is the codes you can use in this bot')
+          .setDescription('Here are the commands you can use for this bot')
           .addField('**!rguide**', '``Showing Runner Guide for brawlball``', false)
           .addField('**!sguide**', '``Showing supporter Guide for brawlball``', false)
           .addField('**!dguide**', '``Showing Defender Guide for brawlball``', false)
