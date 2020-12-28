@@ -148,7 +148,7 @@ client.on("guildMemberAdd", member => {
       number = 10
 
       let myRole = message.guild.roles.get("789701228279627814");
-      member.roles.add(role)
+      member.roles.add(myRole)
 
   
   var images = ["https://i.ibb.co/XjVV1ty/bcs-welcome-image.png"];
