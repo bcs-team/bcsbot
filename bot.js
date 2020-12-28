@@ -138,6 +138,8 @@ client.on('message', message => {
 client.on("guildMemberAdd", member => {
   const channel2 = member.guild.channels.cache.get("789692987914584107")
   channel2.send(`${member} ** Welcome to Brawlball Community server **`)
+    var role = member.guild.roles.cache.find(role => role.name === 'Brawlballians');
+       member.roles.add(role)
 })
 
     
@@ -147,8 +149,8 @@ client.on("guildMemberAdd", member => {
     if (!channel) return 
       number = 10
 
-      let myRole = message.guild.roles.get("789701228279627814");
-      member.roles.add(myRole)
+    
+  
 
   
   var images = ["https://i.ibb.co/XjVV1ty/bcs-welcome-image.png"];
