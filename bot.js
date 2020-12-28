@@ -131,17 +131,14 @@ client.on('message', message => {
   
   }
 })
+
 client.on('message', message => {
   if (message.content ==='!gg') { 
-let targetChannel = message.guild.channels.get("793147387022802994")
-targetChannel.messages.fetch().then((messages) => {
+targetChannel.messages.fetch("793181049319456768")
+.then(message => message.edit("new message"));
+  
 
-  for(const message of messages){
-message[1].edit("yes")
 
-  }
-
-})
  } })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
