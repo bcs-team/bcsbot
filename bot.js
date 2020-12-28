@@ -127,7 +127,7 @@ client.on('message', message => {
     .setDescription("React with this")
     .addField("**EU**",":flag_eu:",true )
     .addField("**US-E**",":flag_us: ",true )
-    .addField("**Remove Brawlballian Role**","🏈",true )
+    .addField("**Remove Brawlballians Role**","🏈",true )
   message.channel.send(embed);
   
   }
