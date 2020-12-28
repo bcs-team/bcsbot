@@ -133,9 +133,11 @@ client.on('message', message => {
 })
 client.on('message', message => {
   if (message.content ==='!editit') { 
-let targetChannel = client.channels.cache.get("793147387022802994")
-targetChannel.messages.fetch("793186417470603314")
-.then(message => message.edit("hi"));
+    let targetChannel = client.channels.cache.get("793147387022802994")
+    message.targetChannel.messages.fetch({around: "793186417470603314", limit: 1})
+  .then(messages => {
+    messages.first().edit("This fetched message was edited");
+  });
  } })
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
