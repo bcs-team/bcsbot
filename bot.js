@@ -138,10 +138,12 @@ client.on('ready', () => {
 });
 client.on('messageReactionAdd', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
+  if(message.channel.id == '736380370651709531'){
   if (emoji.name == '✅') {
           message.guild.members.fetch(user.id).then(member => {
                   member.roles.add('793130309583241236');
-          })}});
+          
+          })}}});
 client.on('messageReactionRemove', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
   if (emoji.name == '✅') {
