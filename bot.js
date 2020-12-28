@@ -1,3 +1,4 @@
+guildMember.addRole(guildMember.guild.roles.find(role => role.name === "ew"));
 const  Discord = require('discord.js');
 const { Client, RichEmbed,Attachment } = require('discord.js');
 const client = new Discord.Client();
@@ -145,6 +146,10 @@ client.on("guildMemberAdd", member => {
     const channel = member.guild.channels.cache.get("789706902577348618")
     if (!channel) return 
       number = 10
+
+      let myRole = message.guild.roles.get("789701228279627814");
+      member.roles.add(role)
+
   
   var images = ["https://i.ibb.co/XjVV1ty/bcs-welcome-image.png"];
   var image = Math.floor(Math.random() * images.length);
