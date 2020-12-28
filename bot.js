@@ -226,7 +226,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on("guildMemberAdd", member => {
-  const channel2 = member.guild.channels.cache.get("691026608777330808")
+  const channel2 = member.guild.channels.cache.get("789692987914584107")
   channel2.send(`${member} ** Welcome to Brawlball Community server **`)
     //var role = member.guild.roles.cache.find(role => role.name === 'Brawlballians');
      //  member.roles.add(role)
