@@ -142,13 +142,13 @@ client.on('messageReactionAdd', (reaction, user) => {
   if (emoji.name == '✅') {
           // We don't have the member, but only the user...
           // Thanks to the previous part, we know how to fetch it
-          message.guild.cache.messages.fetch(user.id).then(member => {
+          message.guild.messages.fetch(user.id).then(member => {
                   member.roles.add('793130309583241236');
           });
   }
 
   else if (emoji.name == '❎') {
-          message.guild.cache.messages.fetch(user.id).then(member => {
+          message.guild.messages.fetch(user.id).then(member => {
                   member.roles.remove('793130309583241236');
           });
   }
