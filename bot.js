@@ -237,7 +237,7 @@ client.on("message", async message => {
   const cmd = args.shift().toLowerCase();
   
   if (cmd === "send") {
-    
+    if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
       if (message.deletable) message.delete();
           message.channel.send(args.join(" "));
       }
