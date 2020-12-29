@@ -220,6 +220,54 @@ client.on('messageReactionRemove', (reaction, user) => {
                     member.roles.remove('789701228279627814');
             })}}});
 
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    ////////////////////////////////////////////////////////MAKE BOT TALK///////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+client.on("message", async message => {
+  const prefix = "+";
+  
+
+  if (message.author.bot) return;
+  if (!message.guild) return;
+  if (!message.content.startsWith(prefix)) return;
+  
+  const args = message.content.slice(prefix.length).trim().split(/ +/g);
+  const cmd = args.shift().toLowerCase();
+  
+  if (cmd === "send") {
+    
+      if (message.deletable) message.delete();
+          message.channel.send(args.join(" "));
+      }
+  
+  });
+
+  client.on("message", async message => {
+    const prefix1 = "+";
+  
+  
+    if (message.author.bot) return;
+    if (!message.guild) return;
+    if (!message.content.startsWith(prefix1)) return;
+  
+    const args1 = message.content.slice(prefix1.length).trim().split(/ +/g);
+    const cmd = args1.shift().toLowerCase();
+  
+    if (cmd === "edit") {
+      if (message.deletable) message.delete();
+        if (args1.length < 0) return message.reply(`Nothing to say?`).then(m => m.delete(5000));
+  
+              message.channel.messages.fetch({around: args1[0].toLowerCase(), limit: 1})
+    .then(messages => {
+              if(!message.member.hasPermission(["MANAGE_MESSAGES"])) return message.channel.send("You do not have permission to  this")
+  else
+  messages.first().edit(args1.slice(1).join(" "));
+  
+    })
+    }
+  });
     
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////WELCOME MSGS CODE//////////////////////////////////////////////////////////////////////////////
