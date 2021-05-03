@@ -118,47 +118,7 @@ client.on('message', message => {
     message.channel.send(embed);
   }
 })
-client.on('message', message => {
-  if (message.content ==='!ez') { 
-    let embed = new Discord.MessageEmbed()
-    .setTitle("**React if you play brawlball and want to get pinged**")
-    .setColor("#0000FF")
-    .setDescription("React with this")
-    .addField("**Brawlballians**","🏈",true )
-    .addField("**EU**",":flag_eu:",true )
-    .addField("**US-E**",":flag_us: ",true )
-  message.channel.send(embed);
-  
-  }
-})
-client.on('message', message => {
-  if (message.content ==='!editit') { 
-    let targetChannel = client.channels.cache.get("793147387022802994")
-    message.channel.messages.fetch({around: "793181049319456768", limit: 1})
-  .then(messages => {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("**React if you play brawlball and want to get pinged**")
-    .setColor("#0000FF")
-    .setDescription("React with this")
-    .addField("**EU**",":flag_eu:",true )
-    .addField("**US-E**",":flag_us: ",true ) 
-    messages.first().edit(embed);
-  });
- }})
-client.on('message', message => {
-  if (message.content ==='!editit2') { 
-    let targetChannel = client.channels.cache.get("793147387022802994")
-    message.channel.messages.fetch({around: "793181049319456768", limit: 1})
-  .then(messages => {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("**React if you play brawlball and want to get pinged**")
-    .setColor("#0000FF")
-    .setDescription("React with this")
-    .addField("**BRS**",":flag_eu:",true )
-    .addField("**US-E**",":flag_us: ",true ) 
-    messages.first().edit(embed);
-  });
- }})
+
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
