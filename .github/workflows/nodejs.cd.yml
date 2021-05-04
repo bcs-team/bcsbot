@@ -1,0 +1,23 @@
+name: Node.js CD
+ 
+on:
+  push:
+    branches: [ master ]
+ 
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy NodeJS app
+        uses: appleboy/ssh-action@v0.1.2
+        with:
+          host: ${{secrets.SSH_HOST}}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: |
+            cd bcsbot
+            git pull
+            npm install
+            npm run build --if-present
+            screen -X -S 'bcsbot' quit && echo 'Succesfully deleted last session.'
+            screen -md -S 'bcsbot' npm start && echo 'Started new session.'
