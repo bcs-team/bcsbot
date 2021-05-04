@@ -2,6 +2,7 @@
 const Discord = require('discord.js');
 const { Client, RichEmbed, Attachment } = require('discord.js');
 const client = new Discord.Client();
+require('dotenv').config();
 
 
 
@@ -295,6 +296,5 @@ client.on('guildMemberAdd', member => {
 
   channel.send(embed);
 })
-
 
 client.login(process.env.BOT_TOKEN)
