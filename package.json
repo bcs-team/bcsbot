@@ -1,5 +1,7 @@
 {
-  "description": "Test",
+  "name": "bcs_discord_bot",
+  "version": "1.0.0",
+  "description": "Make Discord Great Again",
   "main": "bot.js",
   "prefix": "+",
   "scripts": {
