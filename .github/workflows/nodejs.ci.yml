@@ -25,6 +25,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm ci
-    - run: npm run build --if-present´
     env:
         DISCORD_API_TOKEN: ${{ secrets.DISCORD_API_TOKEN }}
