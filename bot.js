@@ -123,26 +123,26 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('message', message => {
-  if (message.content === '!editez') {
-    let embed = new Discord.MessageEmbed()
-    .setTitle('React if you play brawlball and want to get pinged')
-    .setColor("#FF0000")
-    .setThumbnail(client.user.avatarURL())
-    .setDescription('React with this')
-    .addField('**Brawlballians**', ':football:', false)
-    .addField('**EU**', ':flag_eu:', true)
-    .addField('**NA**', ':flag_us:', true)
-    .addField('**SEA**', ':flag_sg:', true)
-    .addField('**BRZ**', ':flag_br:', true)
-    .addField('**JPN**', ':flag_jp:', true)
-    .addField('**AUS**', ':flag_au:', true)
-    message.channel.messages.fetch("793197949491609641")
-    .then(messages => {
-  messages.edit(embed);
-  })
-  }
-})
+// client.on('message', message => {
+//   if (message.content === '!editez') {
+//     let embed = new Discord.MessageEmbed()
+//     .setTitle('React if you play brawlball and want to get pinged')
+//     .setColor("#FF0000")
+//     .setThumbnail(client.user.avatarURL())
+//     .setDescription('React with this')
+//     .addField('**Brawlballians**', ':football:', false)
+//     .addField('**EU**', ':flag_eu:', true)
+//     .addField('**NA**', ':flag_us:', true)
+//     .addField('**SEA**', ':flag_sg:', true)
+//     .addField('**BRZ**', ':flag_br:', true)
+//     .addField('**JPN**', ':flag_jp:', true)
+//     .addField('**AUS**', ':flag_au:', true)
+//     message.channel.messages.fetch("793197949491609641")
+//     .then(messages => {
+//   messages.edit(embed);
+//   })
+//   }
+// })
 
 
 
