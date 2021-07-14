@@ -136,6 +136,7 @@ client.on('message', message => {
     .addField('**SEA**', ':flag_sg:', true)
     .addField('**BRZ**', ':flag_br:', true)
     .addField('**JPN**', ':flag_jp:', true)
+    .addField('**AUS**', ':flag_au:', true)
     message.channel.messages.fetch("793197949491609641")
     .then(messages => {
   messages.edit(embed);
@@ -287,7 +288,29 @@ client.on('messageReactionRemove', (reaction, user) => {
     }
   }
 });
+//----------------------------------------AUS brawlball react-------------------------------------------------
 
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇦🇺') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('864893349512871956');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇦🇺') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('864893349512871956');
+      })
+    }
+  }
+});
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////MAKE BOT TALK///////////////////////////////////////////////////////////////////////////////
