@@ -130,7 +130,7 @@ client.on('message', message => {
     .setColor("#FF0000")
     .setThumbnail(client.user.avatarURL())
     .setDescription('React with this')
-    .addField('**Brawlballians**', ':football:', true)
+    .addField('**Brawlballians**', ':football:', false)
     .addField('**EU**', ':flag_eu:', true)
     .addField('**NA**', ':flag_us:', true)
     .addField('**SEA**', ':flag_sg:', true)
