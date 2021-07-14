@@ -96,7 +96,7 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 client.on('message', message => {
-  if (message.content === '!proo') {
+  if (message.content === '!cool') {
     const embed = new Discord.MessageEmbed()
       .setTitle('**Defender Guide for Brawlball**')
       .setColor("#91A6A6")
@@ -148,7 +148,7 @@ client.on('message', message => {
     .addField('**JPN**', ':flag_jp:', false)
     message.channel.messages.fetch("793197949491609641")
     .then(messages => {
-  messages.first().edit(embed);
+  messages.edit(embed);
   })
   }
 })
