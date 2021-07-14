@@ -95,7 +95,17 @@ client.on('message', message => {
 /////////////////////////////////////////////////////////////////TEST CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
+client.on('message', message => {
+  if (message.content === '!proo') {
+    const embed = new Discord.MessageEmbed()
+      .setTitle('**Defender Guide for Brawlball**')
+      .setColor("#91A6A6")
+      .setThumbnail(client.user.avatarURL)
+      .setDescription("Click [Here](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing) To View The Guide")
+      .setImage('https://i.ibb.co/TKyMTpR/def2.png')
+    message.channel.send(embed)
+  }
+})
 
 
 
