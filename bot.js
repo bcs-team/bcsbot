@@ -123,6 +123,27 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+client.on('message', message => {
+  if (message.content === '!editez') {
+    let embed = new Discord.MessageEmbed()
+    .setTitle('React if you play brawlball and want to get pinged')
+    .setColor("#FF0000")
+    .setThumbnail(client.user.avatarURL())
+    .setDescription('React with this')
+    .addField('**Brawlballians**', ':football:', false)
+    .addField('**EU**', ':flag_eu:', false)
+    .addField('**NA**', ':flag_us:', false)
+    .addField('**SEA**', ':flag_br:', false)
+    .addField('**BRZ**', ':flag_sg:', false)
+    .addField('**JPN**', ':flag_jp:', false)
+    message.channel.messages.fetch("793197949491609641")
+    .then(messages => {
+  messages.first().edit(embed);
+  })
+  }
+})
+
+
 
 client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
@@ -193,6 +214,75 @@ client.on('messageReactionRemove', (reaction, user) => {
     if (emoji.name == '🏈') {
       message.guild.members.fetch(user.id).then(member => {
         member.roles.remove('789701228279627814');
+      })
+    }
+  }
+});
+//----------------------------------------SEA brawlball react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇸🇬') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('864874319824683028');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇸🇬') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('864874319824683028');
+      })
+    }
+  }
+});
+//----------------------------------------BRZ brawlball react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇧🇷') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('864874517406941204');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇧🇷') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('864874517406941204');
+      })
+    }
+  }
+});
+//----------------------------------------JPN brawlball react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇯🇵') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('864874666778165248');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🇯🇵') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('864874666778165248');
       })
     }
   }
