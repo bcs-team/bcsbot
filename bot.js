@@ -95,17 +95,7 @@ client.on('message', message => {
 /////////////////////////////////////////////////////////////////TEST CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-client.on('message', message => {
-  if (message.content === '!cool') {
-    const embed = new Discord.MessageEmbed()
-      .setTitle('**Defender Guide for Brawlball**')
-      .setColor("#91A6A6")
-      .setThumbnail(client.user.avatarURL)
-      .setDescription("Click [Here](https://docs.google.com/document/d/1N8ZLI5BwNHCE-lb3LmrtXpn53qHhpMnAnkOtxDOybbQ/edit?usp=sharing) To View The Guide")
-      .setImage('https://i.ibb.co/TKyMTpR/def2.png')
-    message.channel.send(embed)
-  }
-})
+
 
 
 
@@ -143,8 +133,8 @@ client.on('message', message => {
     .addField('**Brawlballians**', ':football:', false)
     .addField('**EU**', ':flag_eu:', false)
     .addField('**NA**', ':flag_us:', false)
-    .addField('**SEA**', ':flag_br:', false)
-    .addField('**BRZ**', ':flag_sg:', false)
+    .addField('**SEA**', ':flag_sg:', false)
+    .addField('**BRZ**', ':flag_br:', false)
     .addField('**JPN**', ':flag_jp:', false)
     message.channel.messages.fetch("793197949491609641")
     .then(messages => {
