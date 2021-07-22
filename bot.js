@@ -326,7 +326,7 @@ client.on('messageReactionRemove', (reaction, user) => {
                         const { message, emoji } = messageReaction; 
 
                         if(message.channel.id == '793193064931655690'){
-                        const eueu = message.guild.emojis.cache.get('867357737326739496')
+                        const eueu = message.guild.emojis.cache.get('867487337633415178')
                         if(emoji.id == eueu) {
 
                         message.guild.members.fetch(user.id).then(member => {
@@ -342,7 +342,7 @@ client.on('messageReactionRemove', (reaction, user) => {
                           
                         const { message, emoji } = messageReaction;
                         if(message.channel.id == '793193064931655690'){
-                          const eueu = message.guild.emojis.cache.get('867357737326739496')
+                          const eueu = message.guild.emojis.cache.get('867487337633415178')
                         if(emoji.id == eueu) {
                           
                             message.guild.members.fetch(user.id).then(member => {
@@ -363,7 +363,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const useuse = message.guild.emojis.cache.get('867355493671501844')
+                        const useuse = message.guild.emojis.cache.get('867487404373835796')
 
                       if(emoji.id == useuse) {
                       
@@ -380,7 +380,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const useuse = message.guild.emojis.cache.get('867355493671501844')
+                        const useuse = message.guild.emojis.cache.get('867487404373835796')
 
                       if(emoji.id == useuse) {
                           
@@ -405,7 +405,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const seasea = message.guild.emojis.cache.get('867356279650910214')
+                        const seasea = message.guild.emojis.cache.get('867487432139603969')
 
                       if(emoji.id == seasea) {
                       
@@ -422,7 +422,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const seasea = message.guild.emojis.cache.get('867356279650910214')
+                        const seasea = message.guild.emojis.cache.get('867487432139603969')
 
                       if(emoji.id == seasea) {
                           
@@ -447,7 +447,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const brzbrz = message.guild.emojis.cache.get('867356573369892874')
+                        const brzbrz = message.guild.emojis.cache.get('867487382197764116')
 
                       if(emoji.id == brzbrz) {
                       
@@ -464,7 +464,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const brzbrz = message.guild.emojis.cache.get('867356573369892874')
+                        const brzbrz = message.guild.emojis.cache.get('867487382197764116')
 
                       if(emoji.id == brzbrz) {
                           
@@ -489,7 +489,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const ausaus = message.guild.emojis.cache.get('867359798165110834')
+                        const ausaus = message.guild.emojis.cache.get('867487291320041522')
 
                       if(emoji.id == ausaus) {
                       
@@ -506,7 +506,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const ausaus = message.guild.emojis.cache.get('867359798165110834')
+                        const ausaus = message.guild.emojis.cache.get('867487291320041522')
 
                       if(emoji.id == ausaus) {
                           
@@ -533,7 +533,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const jpnjpn = message.guild.emojis.cache.get('867356585910861854')
+                        const jpnjpn = message.guild.emojis.cache.get('867487361579614239')
 
                       if(emoji.id == jpnjpn) {
                       
@@ -550,7 +550,7 @@ client.on('messageReactionRemove', (reaction, user) => {
 
                       const { message, emoji } = messageReaction;
                       if(message.channel.id == '793193064931655690'){
-                        const jpnjpn = message.guild.emojis.cache.get('867356585910861854')
+                        const jpnjpn = message.guild.emojis.cache.get('867487361579614239')
 
                       if(emoji.id == jpnjpn) {
                           
