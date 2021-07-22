@@ -127,7 +127,7 @@ client.on('message', message => {
   if (message.content === '!editez') {
     let embed = new Discord.MessageEmbed()
     .setTitle("React if you're searching for ranked Brawlball lobbies")
-    .setColor("#FF0000")
+    .setColor("#0000FF")
     .setThumbnail("https://cdn.discordapp.com/attachments/533335016848228382/867541475573891112/GameMode_Brawlball.jpg")
     .setDescription('React with this')
     .addField('**EU**', '<:eu:867487337633415178>', true)
