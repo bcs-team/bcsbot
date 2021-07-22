@@ -348,7 +348,7 @@ client.on('messageReactionRemove', (reaction, user) => {
                             message.guild.members.fetch(user.id).then(member => {
                               if(user.bot)  return;
                             else { 
-                          member.roles.remove('867319638663757834')
+                          member.roles.remove('865919212084789270')
                             }})
                             }}});
 
