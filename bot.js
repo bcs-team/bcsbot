@@ -127,7 +127,7 @@ client.on('message', message => {
   if (message.content === '!editez') {
     let embed = new Discord.MessageEmbed()
     .setTitle("React with your Position")
-    .setColor("#0000FF")
+    .setColor("#FFFF00")
     .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
     .setDescription('React with this')
     .addField('**Runner**', ':person_running:', true)
