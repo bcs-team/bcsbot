@@ -128,7 +128,7 @@ client.on('message', message => {
     let embed = new Discord.MessageEmbed()
     .setTitle("React with your Position")
     .setColor("#0000FF")
-    .setThumbnail("https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1564836138317-XQNCZZN9OALYRVI7FN41/Brawlhala+wallpapper+official.jpg?format=1000w")
+    .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
     .setDescription('React with this')
     .addField('**Runner**', ':person_running:', true)
     .addField('**Supporter**', ':crossed_swords:', true)
