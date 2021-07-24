@@ -126,16 +126,14 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '!editez') {
     let embed = new Discord.MessageEmbed()
-    .setTitle("React if you're searching for ranked Brawlball lobbies")
+    .setTitle("React with your Position")
     .setColor("#0000FF")
-    .setThumbnail("https://cdn.discordapp.com/attachments/533335016848228382/867541475573891112/GameMode_Brawlball.jpg")
+    .setThumbnail("https://images.squarespace-cdn.com/content/v1/59af2189c534a58c97bd63b3/1564836138317-XQNCZZN9OALYRVI7FN41/Brawlhala+wallpapper+official.jpg?format=1000w")
     .setDescription('React with this')
-    .addField('**EU**', '<:eu:867487337633415178>', true)
-    .addField('**NA**', '<:use:867487404373835796>', true)
-    .addField('**SEA**', '<:sea:867487432139603969>', true)
-    .addField('**BRZ**', '<:brz:867487382197764116>', true)
-    .addField('**JPN**', '<:jpn:867487361579614239>', true)
-    .addField('**AUS**', '<:aus:867487291320041522>', true)
+    .addField('**Runner**', ':person_running:', true)
+    .addField('**Supporter**', ':crossed_swords:', true)
+    .addField('**Defender**', ':shield:', true)
+
 
   
   message.channel.send(embed);
@@ -562,6 +560,75 @@ client.on('messageReactionRemove', (reaction, user) => {
                             }}});
 
 
+//----------------------------------------RUN react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🏃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('868455186031595520');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🏃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('868455186031595520');
+      })
+    }
+  }
+});
+//----------------------------------------SUP react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '⚔️') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('868456428548026378');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '⚔️') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('868456428548026378');
+      })
+    }
+  }
+});
+//----------------------------------------DEF react-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🛡️') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('868456587130454067');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🛡️') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('868456587130454067');
+      })
+    }
+  }
+});
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////////////////////////////////////MAKE BOT TALK///////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
