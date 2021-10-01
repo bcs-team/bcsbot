@@ -142,7 +142,7 @@ client.on('message', message => {
   if (message.content === '!os') {
     let embed = new Discord.MessageEmbed()
     .setTitle("React to get Our Style info")
-    .setColor("#FFFF00")
+    .setColor("#FF0000")
     .setThumbnail("https://i.ibb.co/ngzn4Cj/os.png")
     .setDescription('React with this 🔔')
 
