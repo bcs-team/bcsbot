@@ -139,7 +139,7 @@ client.on('message', message => {
 
 
 client.on('message', message => {
-  if (message.content === '!os') {
+  if (message.content === '!osez') {
     let embed = new Discord.MessageEmbed()
     .setTitle("React to get Our Style info")
     .setColor("#FFFF00")
