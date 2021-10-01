@@ -139,20 +139,39 @@ client.on('message', message => {
 //
 
 client.on('message', message => {
-  if (message.content === '!pyra') {
+  if (message.content === '!pop') {
     let embed = new Discord.MessageEmbed()
-    .setTitle("React to get The Pyrateers info")
-    .setColor("#000000")
-    .setThumbnail("https://i.ibb.co/HzSxYCR/pyralogo.png")
+    .setTitle("React to get POPcorn info")
+    .setColor("#FF0000")
+    .setThumbnail("https://i.ibb.co/HXTfFQv/poplogo.png")
     .setDescription('React with this 🔔')
 
   message.channel.send(embed);
-  
+  }
+})
+client.on('message', message => {
+  if (message.content === '!tort') {
+    let embed = new Discord.MessageEmbed()
+    .setTitle("React to get Tort Cohort info")
+    .setColor("#FFFF00")
+    .setThumbnail("https://i.ibb.co/p0BmnKG/tortlogo.png")
+    .setDescription('React with this 🔔')
 
+  message.channel.send(embed);
   }
 })
 
+client.on('message', message => {
+  if (message.content === '!azp') {
+    let embed = new Discord.MessageEmbed()
+    .setTitle("React to get Azpects info")
+    .setColor("#000000")
+    .setThumbnail("https://i.ibb.co/vXTbbH5/azpectslogo.png")
+    .setDescription('React with this 🔔')
 
+  message.channel.send(embed);
+  }
+})
 client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('867598495518556190');
