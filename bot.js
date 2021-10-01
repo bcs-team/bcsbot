@@ -138,17 +138,17 @@ client.on('message', message => {
 // })
 //
 
-// client.on('message', message => {
-//   if (message.content === '!pop') {
-//     let embed = new Discord.MessageEmbed()
-//     .setTitle("React to get POPcorn info")
-//     .setColor("#FF0000")
-//     .setThumbnail("https://i.ibb.co/HXTfFQv/poplogo.png")
-//     .setDescription('React with this 🔔')
+client.on('message', message => {
+  if (message.content === '!bbkf') {
+    let embed = new Discord.MessageEmbed()
+    .setTitle("React to get bbkfdbsbbtbbctfhcs info")
+    .setColor("#FFC0CB")
+    .setThumbnail("https://i.ibb.co/pLQ96FJ/bkctflogo.png")
+    .setDescription('React with this 🔔')
 
-//   message.channel.send(embed);
-//   }
-// })
+  message.channel.send(embed);
+  }
+})
 
 client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
