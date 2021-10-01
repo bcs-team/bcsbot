@@ -139,16 +139,16 @@ client.on('message', message => {
 //
 
 client.on('message', message => {
-  if (message.content === '!os') {
+  if (message.content === '!pyra') {
     let embed = new Discord.MessageEmbed()
-    .setTitle("React to get Our Style info")
-    .setColor("#FF0000")
-    .setThumbnail("https://i.ibb.co/ngzn4Cj/os.png")
+    .setTitle("React to get The Pyrateers info")
+    .setColor("#000000")
+    .setThumbnail("https://i.ibb.co/jyYKXSW/pyralogo.png")
     .setDescription('React with this 🔔')
 
   message.channel.send(embed);
   
-  
+
   }
 })
 
