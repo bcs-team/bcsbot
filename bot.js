@@ -139,11 +139,11 @@ client.on('message', message => {
 //
 
 client.on('message', message => {
-  if (message.content === '!prs') {
+  if (message.content === '!pyra') {
     let embed = new Discord.MessageEmbed()
-    .setTitle("React to get PRS info")
+    .setTitle("React to get The Pyrateers info")
     .setColor("#000000")
-    .setThumbnail("https://i.ibb.co/tswGXCr/prslogo.png")
+    .setThumbnail("https://i.ibb.co/HzSxYCR/pyralogo.png")
     .setDescription('React with this 🔔')
 
   message.channel.send(embed);
