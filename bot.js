@@ -138,45 +138,29 @@ client.on('message', message => {
 // })
 //
 
-client.on('message', message => {
-  if (message.content === '!pop') {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("React to get POPcorn info")
-    .setColor("#FF0000")
-    .setThumbnail("https://i.ibb.co/HXTfFQv/poplogo.png")
-    .setDescription('React with this 🔔')
+// client.on('message', message => {
+//   if (message.content === '!pop') {
+//     let embed = new Discord.MessageEmbed()
+//     .setTitle("React to get POPcorn info")
+//     .setColor("#FF0000")
+//     .setThumbnail("https://i.ibb.co/HXTfFQv/poplogo.png")
+//     .setDescription('React with this 🔔')
 
-  message.channel.send(embed);
-  }
-})
-client.on('message', message => {
-  if (message.content === '!tort') {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("React to get Tort Cohort info")
-    .setColor("#FFFF00")
-    .setThumbnail("https://i.ibb.co/p0BmnKG/tortlogo.png")
-    .setDescription('React with this 🔔')
+//   message.channel.send(embed);
+//   }
+// })
 
-  message.channel.send(embed);
-  }
-})
-
-client.on('message', message => {
-  if (message.content === '!azp') {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("React to get Azpects info")
-    .setColor("#000000")
-    .setThumbnail("https://i.ibb.co/vXTbbH5/azpectslogo.png")
-    .setDescription('React with this 🔔')
-
-  message.channel.send(embed);
-  }
-})
 client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('867598495518556190');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('868462174408933416');
 
+  client.guilds.cache.get('789692987143094293').channels.cache.get('789964691866386484').messages.fetch('893614500924760085');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('789964771855302656').messages.fetch('893618264264032336');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('789965482953277500').messages.fetch('893617957161295893');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('808735384753930281').messages.fetch('893620807861944371');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('841987386756825099').messages.fetch('893620913227059220');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('882471760879026206').messages.fetch('893620999466147880');
 
   ////////////////////////////////////clans annouc////////////////////////////////////
 
