@@ -123,30 +123,44 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// client.on('message', message => {
+//   if (message.content === '!editez') {
+//     let embed = new Discord.MessageEmbed()
+//     .setTitle("React with your Position")
+//     .setColor("#FFFF00")
+//     .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
+//     .setDescription('React with this')
+//     .addField('**Runner**', ':person_running:', true)
+//     .addField('**Supporter**', ':crossed_swords:', true)
+//     .addField('**Defender**', ':shield:', true) 
+//   message.channel.send(embed);  
+//   }
+// })
+
+
 client.on('message', message => {
-  if (message.content === '!editez') {
+  if (message.content === '!os') {
     let embed = new Discord.MessageEmbed()
-    .setTitle("React with your Position")
+    .setTitle("React to get Our Style info")
     .setColor("#FFFF00")
-    .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
-    .setDescription('React with this')
-    .addField('**Runner**', ':person_running:', true)
-    .addField('**Supporter**', ':crossed_swords:', true)
-    .addField('**Defender**', ':shield:', true)
+    .setThumbnail("https://i.ibb.co/ngzn4Cj/os.png")
+    .setDescription('React with this 🔔')
 
-
-  
   message.channel.send(embed);
   
   }
 })
 
 
-
 client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('867598495518556190');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('868462174408933416');
+
+
+  ////////////////////////////////////clans annouc////////////////////////////////////
+
+
 })
 
 //-------------------------------------eu brawlball reaction-----------------------------------------
@@ -625,6 +639,175 @@ client.on('messageReactionRemove', (reaction, user) => {
     if (emoji.name == '🛡️') {
       message.guild.members.fetch(user.id).then(member => {
         member.roles.remove('868456587130454067');
+      })
+    }
+  }
+});
+
+
+//----------------------------------------clans annouc react-------------------------------------------------
+
+
+//our style
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '789964691866386484') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893278711770660946');
+
+      })
+    }
+  }
+});
+//pyrateers
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '789964771855302656') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893278894663286826');
+
+      })
+    }
+  }
+});
+//prs
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '789965482953277500') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893279039924604951');
+
+      })
+    }
+  }
+});
+//popcorn
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '808735384753930281') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893279140197834802');
+
+      })
+    }
+  }
+});
+//azpects
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '841987386756825099') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893279151568588890');
+
+      })
+    }
+  }
+});
+//tort hort
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '882471760879026206') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893279375317942282');
+
+      })
+    }
+  }
+});
+//bbkfctf 
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '887482939452039168') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('893279547708031006');
+
+      })
+    }
+  }
+});
+
+//#####################################################################################################
+
+// our style
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '789964691866386484') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893278711770660946');
+      })
+    }
+  }
+});
+// pyra
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '789964771855302656') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893278894663286826');
+      })
+    }
+  }
+});
+// prs
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('789965482953277500');
+      })
+    }
+  }
+});
+// popcorn
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '808735384753930281') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893279140197834802');
+      })
+    }
+  }
+});
+// azpects
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '841987386756825099') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893279151568588890');
+      })
+    }
+  }
+});
+// tort hort
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '882471760879026206') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893279375317942282');
+      })
+    }
+  }
+});
+// bbkfctf
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '887482939452039168') {
+    if (emoji.name == '🔔') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('893279547708031006');
       })
     }
   }
