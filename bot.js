@@ -30,6 +30,7 @@ client.on('message', message => {
     message.channel.send(embed)
   }
 })
+client.setMaxListeners(0);
 client.on('message', message => {
   if (message.content === '!rguide') {
     const embed = new Discord.MessageEmbed()
@@ -90,7 +91,7 @@ client.on('message', message => {
     message.channel.send(embed)
   }
 })
-
+client.setMaxListeners(0);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////TEST CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -238,7 +239,7 @@ client.on('messageReactionRemove', (reaction, user) => {
   }
 });
 //----------------------------------------SEA brawlball react-------------------------------------------------
-
+client.setMaxListeners(0);
 client.on('messageReactionAdd', (reaction, user) => {
   let message = reaction.message, emoji = reaction.emoji;
   if (message.channel.id == '793193064931655690') {
