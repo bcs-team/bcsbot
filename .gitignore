@@ -1,4 +1,8 @@
+# IDE
+.vscode
+
 # env secrets
 .env
+
 # build
 node_modules/

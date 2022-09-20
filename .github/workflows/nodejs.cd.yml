@@ -19,4 +19,4 @@ jobs:
             git pull
             npm install
             screen -X -S 'bcsbot' quit && echo 'Succesfully deleted last session.'
-            screen -md -S 'bcsbot' npm start && echo 'Started new session.'
+            bash start.sh && echo 'Started new session.'
