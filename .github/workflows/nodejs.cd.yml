@@ -18,5 +18,5 @@ jobs:
             cd bcsbot
             git pull
             npm install
-            screen -X -S 'bcsbot' quit && echo 'Succesfully deleted last session.'
+            screen -X -S 'bcs_bot' quit && echo 'Succesfully deleted last session.'
             bash start.sh && echo 'Started new session.'
