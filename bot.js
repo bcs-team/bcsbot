@@ -124,17 +124,17 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-client.on('message', message => {
-  if (message.content === '!editez') {
-    let embed = new Discord.MessageEmbed()
-    .setTitle("React if you want to get ping for Game Night")
-    .setColor("#000000")
-    .setThumbnail("https://i.pinimg.com/originals/d0/a5/da/d0a5da11a96cd3e12ff69a7c646a0661.jpg")
-    .setDescription('React with this')
-    .addField('**Game Night**', ':night_with_stars: ', true)
-  message.channel.send(embed);  
-  }
-})
+// client.on('message', message => {
+//   if (message.content === '!editez') {
+//     let embed = new Discord.MessageEmbed()
+//     .setTitle("React if you want to get ping for Game Night")
+//     .setColor("#000000")
+//     .setThumbnail("https://i.pinimg.com/originals/d0/a5/da/d0a5da11a96cd3e12ff69a7c646a0661.jpg")
+//     .setDescription('React with this')
+//     .addField('**Game Night**', ':night_with_stars: ', true)
+//   message.channel.send(embed);  
+//   }
+// })
 
 
 // client.on('message', message => {
