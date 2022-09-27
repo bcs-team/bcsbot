@@ -127,17 +127,15 @@ client.on('message', message => {
 // client.on('message', message => {
 //   if (message.content === '!editez') {
 //     let embed = new Discord.MessageEmbed()
-//     .setTitle("React with your Position")
-//     .setColor("#FFFF00")
-//     .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
+//     .setTitle("React if you want to get ping for Game Night")
+//     .setColor("#000000")
+//     .setThumbnail("https://i.pinimg.com/originals/d0/a5/da/d0a5da11a96cd3e12ff69a7c646a0661.jpg")
 //     .setDescription('React with this')
-//     .addField('**Runner**', ':person_running:', true)
-//     .addField('**Supporter**', ':crossed_swords:', true)
-//     .addField('**Defender**', ':shield:', true) 
+//     .addField('**Game Night**', ':night_with_stars: ', true)
 //   message.channel.send(embed);  
 //   }
 // })
-//
+
 
 // client.on('message', message => {
 //   if (message.content === '!bbkf') {
@@ -155,6 +153,7 @@ client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('867598495518556190');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('868462174408933416');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('1024204269462769674');
 ////////////  FETCH CLANS ///////////////////////////
 //   client.guilds.cache.get('789692987143094293').channels.cache.get('789964691866386484').messages.fetch('893614500924760085');
 //   client.guilds.cache.get('789692987143094293').channels.cache.get('789964771855302656').messages.fetch('893618264264032336');
@@ -649,6 +648,41 @@ client.on('messageReactionRemove', (reaction, user) => {
     }
   }
 });
+
+
+
+
+//----------------------------------------Game Night-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🌃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('962576436626083841');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🌃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('962576436626083841');
+      })
+    }
+  }
+});
+
+
+
+
+
+
+
+
 
 
 // //----------------------------------------clans annouc react-------------------------------------------------
