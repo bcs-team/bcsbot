@@ -153,6 +153,7 @@ client.on('ready', () => {
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('793197949491609641');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('867598495518556190');
   client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('868462174408933416');
+  client.guilds.cache.get('789692987143094293').channels.cache.get('793193064931655690').messages.fetch('1024204269462769674');
 ////////////  FETCH CLANS ///////////////////////////
 //   client.guilds.cache.get('789692987143094293').channels.cache.get('789964691866386484').messages.fetch('893614500924760085');
 //   client.guilds.cache.get('789692987143094293').channels.cache.get('789964771855302656').messages.fetch('893618264264032336');
