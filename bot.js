@@ -124,20 +124,18 @@ client.on('message', message => {
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////reactions CODE//////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// client.on('message', message => {
-//   if (message.content === '!editez') {
-//     let embed = new Discord.MessageEmbed()
-//     .setTitle("React with your Position")
-//     .setColor("#FFFF00")
-//     .setThumbnail("https://preview.redd.it/yscbrlie4z271.jpg?width=640&crop=smart&auto=webp&s=bc5d048d1abe67106ad3f32005809938f601a800")
-//     .setDescription('React with this')
-//     .addField('**Runner**', ':person_running:', true)
-//     .addField('**Supporter**', ':crossed_swords:', true)
-//     .addField('**Defender**', ':shield:', true) 
-//   message.channel.send(embed);  
-//   }
-// })
-//
+client.on('message', message => {
+  if (message.content === '!editez') {
+    let embed = new Discord.MessageEmbed()
+    .setTitle("React if you want to get ping for Game Night")
+    .setColor("#FFFF00")
+    .setThumbnail("https://mccoyhomes.com/wp-content/uploads/2020/08/AdobeStock_267657646-2048x1152.jpeg")
+    .setDescription('React with this')
+    .addField('**Game Night**', ':night_with_stars: ', true)
+  message.channel.send(embed);  
+  }
+})
+
 
 // client.on('message', message => {
 //   if (message.content === '!bbkf') {
@@ -649,6 +647,41 @@ client.on('messageReactionRemove', (reaction, user) => {
     }
   }
 });
+
+
+
+
+//----------------------------------------Game Night-------------------------------------------------
+
+client.on('messageReactionAdd', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🌃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.add('962576436626083841');
+
+      })
+    }
+  }
+});
+client.on('messageReactionRemove', (reaction, user) => {
+  let message = reaction.message, emoji = reaction.emoji;
+  if (message.channel.id == '793193064931655690') {
+    if (emoji.name == '🌃') {
+      message.guild.members.fetch(user.id).then(member => {
+        member.roles.remove('962576436626083841');
+      })
+    }
+  }
+});
+
+
+
+
+
+
+
+
 
 
 // //----------------------------------------clans annouc react-------------------------------------------------
